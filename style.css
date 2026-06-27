@@ -1042,11 +1042,11 @@ img{
  * #-PP Category
 */
 .pp_cate_list ul li {
-	width: 15.5%;
+	width: 23.2%;
 	float: left;
 	border: 1px solid #e1dcdc;
 	background: #fff;
-	margin: 15px 0.58%;
+	margin: 15px 0.75%;
 	border-radius: 5px;
 	-webkit-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
