@@ -1042,38 +1042,60 @@ img{
  * #-PP Category
 */
 .pp_cate_list ul li {
-	width: 23.2%;
+	width: 30.5%;
 	float: left;
-	border: 1px solid #e1dcdc;
-	background: #fff;
-	margin: 15px 0.75%;
-	border-radius: 5px;
+	border: none;
+	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+	margin: 15px 1.25%;
+	border-radius: 8px;
 	-webkit-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
-	box-shadow: 0px 0px 10px 0px #eee;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+	overflow: hidden;
+	position: relative;
+}
+.pp_cate_list ul li::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: linear-gradient(90deg, #C89B3C, #F4E5B3, #C89B3C);
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+}
+.pp_cate_list ul li:hover::before {
+	opacity: 1;
 }
 .pp_cate_list ul li a {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 16px 10px;
+	padding: 18px 14px;
 	box-sizing: border-box;
 }
 .pp_cate_list ul li a span {
-	color: #333;
-	font-size: 15px;
+	color: #F4E5B3;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+	line-height: 1.3;
+	transition: color 0.4s ease-in-out;
 }
 .pp_cate_list ul li a img {
-	max-width: 60px;
+	max-width: 80px;
 	width: 100%;
 	display: block;
 	transform: rotate(25deg);
 	transition: transform 0.4s ease-in-out;
+	filter: brightness(1.1) contrast(1.1);
 }
 .pp_cate_list ul li:hover {
-	border-color: #C89B3C;
-	box-shadow: none;
+	background: linear-gradient(135deg, #1f1f3a 0%, #1a2744 100%);
+	box-shadow: 0 8px 25px rgba(200, 155, 60, 0.2);
+	transform: translateY(-3px);
 }
 .pp_cate_list ul li:hover a span{
 	color: #C89B3C;
@@ -1082,7 +1104,107 @@ img{
 }
 .pp_cate_list ul li:hover a img {
 	transform: rotate(0deg);
+	filter: brightness(1.2) contrast(1.1);
 }
+/*
+ * #-Category Box
+*/
+.cate_box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px 30px;
+	background: #fff;
+	border-radius: 10px;
+	border: 1px solid #eee;
+	text-decoration: none;
+	transition: all 0.4s ease;
+	overflow: hidden;
+	position: relative;
+}
+.cate_box::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	border-radius: 10px 0 0 10px;
+	transition: all 0.4s ease;
+}
+.cate_box:hover {
+	text-decoration: none;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+	transform: translateY(-5px);
+}
+.cate_box_content h3 {
+	color: #333;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	transition: color 0.4s ease;
+}
+.cate_box_content p {
+	color: #999;
+	font-size: 13px;
+	margin: 0;
+	transition: color 0.4s ease;
+}
+.cate_box_img {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+.cate_box_img img {
+	max-width: 100%;
+	max-height: 100%;
+	transition: transform 0.4s ease;
+}
+.cate_box:hover .cate_box_img img {
+	transform: scale(1.1) rotate(-5deg);
+}
+.cate_box:hover .cate_box_content h3 {
+	color: #C89B3C;
+}
+.cate_box:hover .cate_box_content p {
+	color: #666;
+}
+
+/* Category Colors */
+.cate_box_1::after { background: #C89B3C; }
+.cate_box_1:hover { border-color: #C89B3C; }
+.cate_box_1 .cate_box_img { background: rgba(200,155,60,0.1); border-radius: 50%; }
+
+.cate_box_2::after { background: #7B8BA3; }
+.cate_box_2:hover { border-color: #7B8BA3; }
+.cate_box_2 .cate_box_img { background: rgba(123,139,163,0.1); border-radius: 50%; }
+
+.cate_box_3::after { background: #A8A8A8; }
+.cate_box_3:hover { border-color: #A8A8A8; }
+.cate_box_3 .cate_box_img { background: rgba(168,168,168,0.1); border-radius: 50%; }
+
+.cate_box_4::after { background: #C0C0C0; }
+.cate_box_4:hover { border-color: #C0C0C0; }
+.cate_box_4 .cate_box_img { background: rgba(192,192,192,0.1); border-radius: 50%; }
+
+.cate_box_5::after { background: #D4AF37; }
+.cate_box_5:hover { border-color: #D4AF37; }
+.cate_box_5 .cate_box_img { background: rgba(212,175,55,0.1); border-radius: 50%; }
+
+.cate_box_6::after { background: #B87333; }
+.cate_box_6:hover { border-color: #B87333; }
+.cate_box_6 .cate_box_img { background: rgba(184,115,51,0.1); border-radius: 50%; }
+
+.cate_box_7::after { background: #5B8C5A; }
+.cate_box_7:hover { border-color: #5B8C5A; }
+.cate_box_7 .cate_box_img { background: rgba(91,140,90,0.1); border-radius: 50%; }
+
+.cate_box_8::after { background: #C89B3C; }
+.cate_box_8:hover { border-color: #C89B3C; }
+.cate_box_8 .cate_box_img { background: rgba(200,155,60,0.1); border-radius: 50%; }
 /*
  * #-Product Item
 */
