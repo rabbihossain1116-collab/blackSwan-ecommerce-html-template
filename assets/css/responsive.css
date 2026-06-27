@@ -54,7 +54,7 @@
 		transition: all .4s ease-in-out;
 	}
 	.canvas_open:hover{
-		background: #7BAE00;
+		background: #C89B3C;
 	}
 	.canvas_open:hover a span{
 		background: #fff;
