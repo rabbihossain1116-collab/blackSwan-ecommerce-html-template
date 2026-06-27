@@ -86,6 +86,10 @@
   }
   .pp_cate_list ul li a {
     padding: 16px 2px;
+    flex-direction: row;
+  }
+  .pp_cate_list ul li a img {
+    max-width: 45px;
   }
   .hero-slider-full2 {
     margin-bottom: 30px;
@@ -146,6 +150,9 @@
   }
   .pp_cate_list ul li a span {
     font-size: 13px;
+  }
+  .pp_cate_list ul li a img {
+    max-width: 40px;
   }
   .pp_cate_list ul li {
     margin: 5px 0.58%;
@@ -216,6 +223,9 @@
   .pp_cate_list ul li a span {
     font-size: 12px;
   }
+  .pp_cate_list ul li a img {
+    max-width: 35px;
+  }
   .about-content h2 {
     font-size: 35px;
   }
@@ -267,6 +277,9 @@
   }
   .pp_cate_list ul li {
     width: 48.8%;
+  }
+  .pp_cate_list ul li a img {
+    max-width: 30px;
   }
   .about-content h2 {
     font-size: 30px;
