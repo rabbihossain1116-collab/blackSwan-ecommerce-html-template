@@ -2983,11 +2983,11 @@ img{
 /*
  * Pagination
 */
-. _pagination ul li {
+._pagination ul li {
 	display: inline-block;
 	margin: 0px 2px;
 }
-. _pagination ul li a{
+._pagination ul li a{
 	display: flex;
 	width: 42px;
 	height: 42px;
@@ -3002,7 +3002,7 @@ img{
 	font-size: 16px;
 	border: 1px solid #eee;
 }
-. _pagination ul li span{
+._pagination ul li span{
 	display: flex;
 	width: 42px;
 	height: 42px;
@@ -3017,7 +3017,7 @@ img{
 	font-size: 16px;
 	border: 1px solid #C89B3C;
 }
-. _pagination ul li a:hover{
+._pagination ul li a:hover{
 	background: #C89B3C;
 	color: #fff;
 	border-color: #C89B3C;
@@ -4485,4 +4485,295 @@ h2.accordion-header {
 .canvas_open a:hover {
   color: #fe3737;
   border-color: #fe3737;
+}
+
+/* ========================
+   Filter Sidebar Styles
+   ======================== */
+.filter-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+.filter-btn:hover {
+  background: #C89B3C;
+  color: #fff;
+}
+.filter-btn i {
+  font-size: 14px;
+}
+
+/* Filter Sidebar Overlay */
+.filter-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1099;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.filter-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Filter Sidebar */
+.filter-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100%;
+  background: #fff;
+  z-index: 1100;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.filter-sidebar.active {
+  transform: translateX(0);
+}
+.filter-sidebar-inner {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Filter Header */
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 1px solid #eee;
+  background: #f8f8f8;
+}
+.filter-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.filter-close {
+  background: none;
+  border: 2px solid #333;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.filter-close i {
+  font-size: 14px;
+  color: #333;
+}
+.filter-close:hover {
+  background: #C89B3C;
+  border-color: #C89B3C;
+}
+.filter-close:hover i {
+  color: #fff;
+}
+
+/* Filter Body */
+.filter-body {
+  flex: 1;
+  padding: 20px 25px;
+  overflow-y: auto;
+}
+
+/* Filter Widget */
+.filter-widget {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+.filter-widget:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.filter-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 15px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Filter List */
+.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.filter-list li {
+  margin-bottom: 10px;
+}
+.filter-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Custom Checkbox */
+.filter-check {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+.filter-check:hover {
+  color: #C89B3C;
+}
+.filter-check input[type="checkbox"] {
+  display: none;
+}
+.filter-check .checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+.filter-check input[type="checkbox"]:checked + .checkmark {
+  background: #C89B3C;
+  border-color: #C89B3C;
+}
+.filter-check input[type="checkbox"]:checked + .checkmark::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.filter-check input[type="checkbox"]:checked ~ * {
+  color: #C89B3C;
+}
+
+/* Price Range Slider */
+.price-range-slider {
+  padding: 10px 0;
+}
+.range-slider {
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ddd;
+  border-radius: 3px;
+  outline: none;
+}
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #C89B3C;
+  cursor: pointer;
+  border: 3px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.range-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #C89B3C;
+  cursor: pointer;
+  border: 3px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.price-range-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Rating Stars */
+.rating-filter .stars {
+  display: inline-flex;
+  gap: 2px;
+  margin-right: 5px;
+}
+.rating-filter .stars i {
+  color: #C89B3C;
+  font-size: 13px;
+}
+
+/* Filter Footer */
+.filter-footer {
+  padding: 20px 25px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+  background: #f8f8f8;
+}
+.filter-apply {
+  flex: 1;
+  background: #C89B3C;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.filter-apply:hover {
+  background: #333;
+}
+.filter-clear {
+  flex: 1;
+  background: #fff;
+  color: #333;
+  border: 2px solid #ddd;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.filter-clear:hover {
+  border-color: #C89B3C;
+  color: #C89B3C;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .filter-sidebar {
+    width: 280px;
+  }
 }

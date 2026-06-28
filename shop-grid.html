@@ -508,6 +508,207 @@
     </section>
     <!-- End BreadCrumb Area -->
 
+    <!-- Start Filter Sidebar -->
+    <div class="filter-sidebar" id="filterSidebar">
+      <div class="filter-sidebar-inner">
+        <div class="filter-header">
+          <h3>Filters</h3>
+          <button class="filter-close" id="filterClose" type="button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="filter-body">
+          <!-- Category Filter -->
+          <div class="filter-widget">
+            <h4 class="filter-title">Category</h4>
+            <ul class="filter-list">
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="category" value="vegetable" />
+                  <span class="checkmark"></span>
+                  Vegetable
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="category" value="fruit" />
+                  <span class="checkmark"></span>
+                  Fruit
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="category" value="dairy" />
+                  <span class="checkmark"></span>
+                  Dairy & Eggs
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="category" value="meat" />
+                  <span class="checkmark"></span>
+                  Meat & Fish
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="category" value="snack" />
+                  <span class="checkmark"></span>
+                  Snacks
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="category" value="beverage" />
+                  <span class="checkmark"></span>
+                  Beverages
+                </label>
+              </li>
+            </ul>
+          </div>
+          <!-- Price Range Filter -->
+          <div class="filter-widget">
+            <h4 class="filter-title">Price Range</h4>
+            <div class="price-range-slider">
+              <input
+                type="range"
+                class="range-slider"
+                id="priceRange"
+                min="0"
+                max="500"
+                value="250"
+              />
+              <div class="price-range-values">
+                <span id="priceMin">$0</span>
+                <span id="priceMax">$500</span>
+              </div>
+            </div>
+          </div>
+          <!-- Brand Filter -->
+          <div class="filter-widget">
+            <h4 class="filter-title">Brand</h4>
+            <ul class="filter-list">
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="brand" value="organic" />
+                  <span class="checkmark"></span>
+                  Organic Farm
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="brand" value="fresh" />
+                  <span class="checkmark"></span>
+                  Fresh Daily
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="brand" value="nature" />
+                  <span class="checkmark"></span>
+                  Nature's Best
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="brand" value="premium" />
+                  <span class="checkmark"></span>
+                  Premium Choice
+                </label>
+              </li>
+            </ul>
+          </div>
+          <!-- Rating Filter -->
+          <div class="filter-widget">
+            <h4 class="filter-title">Rating</h4>
+            <ul class="filter-list rating-filter">
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="rating" value="5" />
+                  <span class="checkmark"></span>
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="rating" value="4" />
+                  <span class="checkmark"></span>
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                  & Up
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="rating" value="3" />
+                  <span class="checkmark"></span>
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                  & Up
+                </label>
+              </li>
+            </ul>
+          </div>
+          <!-- Size Filter -->
+          <div class="filter-widget">
+            <h4 class="filter-title">Size</h4>
+            <ul class="filter-list">
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="size" value="small" />
+                  <span class="checkmark"></span>
+                  Small (500g)
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="size" value="medium" />
+                  <span class="checkmark"></span>
+                  Medium (1kg)
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="size" value="large" />
+                  <span class="checkmark"></span>
+                  Large (2kg)
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" name="size" value="family" />
+                  <span class="checkmark"></span>
+                  Family Pack (5kg)
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter-footer">
+          <button class="filter-apply" type="button">Apply Filters</button>
+          <button class="filter-clear" type="button">Clear All</button>
+        </div>
+      </div>
+    </div>
+    <div class="filter-overlay" id="filterOverlay"></div>
+    <!-- End Filter Sidebar -->
+
     <!-- Start Shop Section -->
     <section class="section-padding">
       <div class="container">
@@ -518,24 +719,9 @@
               <div class="col-12">
                 <div class="ltn__shop-options">
                   <div class="list-single">
-                    <div class="ltn__grid-list-tab-menu">
-                      <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link active"
-                            id="gridView-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#gridView"
-                            role="tab"
-                            aria-controls="gridView"
-                            aria-selected="true"
-                          >
-                            <i class="fas fa-th"></i>
-                          </button>
-                        </li>
-
-                      </ul>
-                    </div>
+                    <button class="filter-btn" id="filterToggle" type="button">
+                      <i class="fas fa-sliders-h"></i>
+                    </button>
                   </div>
                   <div class="list-single">
                     <div class="showing-product-number text-right">
@@ -1494,6 +1680,7 @@
     <script src="assets/js/countdown.js"></script>
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/filter-sidebar.js"></script>
   </body>
 
   <!-- Mirrored from themes.feedbackget.com/html/ /shop-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Jun 2026 08:45:25 GMT -->
