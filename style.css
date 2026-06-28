@@ -3454,6 +3454,13 @@ img{
 	font-weight: 600;
 	color: #020f06;
 }
+.showing-product-number.text-left {
+	text-align: left;
+	font-size: 15px;
+	text-transform: capitalize;
+	font-weight: 600;
+	color: #020f06;
+}
 .woo-product-shorting .nice-select {
 	border: 2px solid #e1dcdc;
 	border-radius: 0px;
