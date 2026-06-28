@@ -1,6 +1,6 @@
 /*
-Template Name: Fodo - Grocery Store and Food eCommerce HTML5 Template
-Description: Fodo - Grocery Store and Food eCommerce HTML5 Template
+Template Name:   - Grocery Store and Food eCommerce HTML5 Template
+Description:   - Grocery Store and Food eCommerce HTML5 Template
 Author: CodexUnicTheme
 Author URI: https://codecanyon.net/user/codexunictheme/portfolio
 Support: abidtpi141@mail.com
@@ -2222,7 +2222,7 @@ img{
 /*
  * #-Category Menu
 */
-.fodo_category_menu {
+. _category_menu {
 	background: #fff;
 	border: 1px solid #e1dcdc;
 	border-radius: 5px;
@@ -2983,11 +2983,11 @@ img{
 /*
  * Pagination
 */
-.fodo_pagination ul li {
+. _pagination ul li {
 	display: inline-block;
 	margin: 0px 2px;
 }
-.fodo_pagination ul li a{
+. _pagination ul li a{
 	display: flex;
 	width: 42px;
 	height: 42px;
@@ -3002,7 +3002,7 @@ img{
 	font-size: 16px;
 	border: 1px solid #eee;
 }
-.fodo_pagination ul li span{
+. _pagination ul li span{
 	display: flex;
 	width: 42px;
 	height: 42px;
@@ -3017,7 +3017,7 @@ img{
 	font-size: 16px;
 	border: 1px solid #C89B3C;
 }
-.fodo_pagination ul li a:hover{
+. _pagination ul li a:hover{
 	background: #C89B3C;
 	color: #fff;
 	border-color: #C89B3C;
@@ -4240,7 +4240,7 @@ h2.accordion-header {
   right: 0;
   bottom: 0;
   background-color: #fff;
-  z-index: 999999; 
+  z-index: 999999;
 }
 #preloader .preloader {
 	width: 100%;
@@ -4275,22 +4275,22 @@ h2.accordion-header {
 @keyframes preloader {
   	0% {
     	transform: scale(0, 0);
-    	opacity: 0.5; 
+    	opacity: 0.5;
 	}
   	100% {
     	transform: scale(1, 1);
-    	opacity: 0; 
-	} 
+    	opacity: 0;
+	}
 }
 @-webkit-keyframes preloader {
   	0% {
     	-webkit-transform: scale(0, 0);
-    	opacity: 0.5; 
+    	opacity: 0.5;
 	}
   	100% {
     	-webkit-transform: scale(1, 1);
-    	opacity: 0; 
-    } 
+    	opacity: 0;
+    }
 }
 /*End Preloader Style
 /*
@@ -4314,22 +4314,22 @@ h2.accordion-header {
 @-webkit-keyframes sticky {
   	0% {
     	-webkit-transform: translateY(-100%);
-    	transform: translateY(-100%); 
+    	transform: translateY(-100%);
     }
   	100% {
     	-webkit-transform: translateY(0%);
-    	transform: translateY(0%); 
-	} 
+    	transform: translateY(0%);
+	}
 }
 @keyframes sticky {
   	0% {
     	-webkit-transform: translateY(-100%);
-    	transform: translateY(-100%); 
+    	transform: translateY(-100%);
 	}
   	100% {
     	-webkit-transform: translateY(0%);
-    	transform: translateY(0%); 
-	} 
+    	transform: translateY(0%);
+	}
 }
 /*
  * #-Mobile Menu

@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Static HTML/CSS e-commerce template (Fodo grocery store). No build system, bundler, or package manager.
+Static HTML/CSS e-commerce template (  grocery store). No build system, bundler, or package manager.
 
 ## Project structure
 
