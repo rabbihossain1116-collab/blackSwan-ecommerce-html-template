@@ -1231,7 +1231,7 @@ img{
 	overflow: hidden;
 	position: relative;
 	background: #f7f7f7;
-	border-radius: 20px 20px 0 0;
+	border-radius: 8px 8px 0 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
