@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (mobileDrawer) {
             mobileDrawer.classList.remove("translate-x-0");
-            mobileDrawer.classList.add("-translate-x-full");
+            mobileDrawer.classList.add("translate-x-full");
         }
         if (searchDrawer) {
             searchDrawer.classList.remove("translate-x-0");
