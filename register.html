@@ -302,25 +302,25 @@
 
     <!-- Start Register Area -->
     <section class="py-16 bg-[#fbfbfb]">
-      <div class="container mx-auto px-4">
-        <div class="login-form-bhouse max-w-[450px] w-full mx-auto bg-white p-[30px] rounded-lg shadow-sm border border-gray-100">
+      <div class="container mx-auto px-4 flex justify-center">
+        <div class="login-form-bhouse max-w-[450px] w-full bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100">
           <!-- Form Header -->
           <div class="login-register-form-head mb-8">
             <h2 class="text-center text-[26px] font-black text-secondary uppercase tracking-wider mb-6">Register</h2>
             <ul class="flex justify-between items-center w-full gap-2.5">
               <li class="w-[48%]">
-                <a href="#" class="w-full bg-[#D04237] text-white flex items-center justify-center gap-2 py-3 rounded text-sm font-semibold hover:bg-[#b03026] transition-colors">
+                <a href="#" class="w-full bg-[#D04237] text-white flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold hover:bg-[#b03026] transition-colors">
                   <i class="fab fa-google text-lg"></i>
                   <span>Google</span>
                 </a>
               </li>
               <li class="w-[23%]">
-                <a href="#" class="w-full bg-[#36528C] text-white flex items-center justify-center py-3.5 rounded text-lg hover:bg-[#253d70] transition-colors">
+                <a href="#" class="w-full bg-[#36528C] text-white flex items-center justify-center py-3.5 rounded-xl text-lg hover:bg-[#253d70] transition-colors">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li class="w-[23%]">
-                <a href="#" class="w-full bg-[#0D8DDC] text-white flex items-center justify-center py-3.5 rounded text-lg hover:bg-[#0b74b6] transition-colors">
+                <a href="#" class="w-full bg-[#0D8DDC] text-white flex items-center justify-center py-3.5 rounded-xl text-lg hover:bg-[#0b74b6] transition-colors">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
@@ -329,32 +329,32 @@
           
           <!-- Form Fields -->
           <div class="login-register-form-middle">
-            <form action="#">
-              <div class="relative mb-6">
-                <label for="name" class="absolute -top-2 left-5 bg-white px-1 z-10 text-[12px] font-medium text-secondary">Name</label>
-                <input type="text" name="name" id="name" class="w-full border border-gray-200 px-5 py-3.5 outline-none rounded focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-sm text-secondary" required />
+            <form action="#" class="space-y-6">
+              <div class="relative">
+                <label for="name" class="absolute -top-2 left-5 bg-white px-1.5 z-10 text-[12px] font-bold text-secondary uppercase tracking-wide">Name</label>
+                <input type="text" name="name" id="name" class="w-full border border-gray-200 px-5 py-4 outline-none rounded-xl focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-sm text-secondary bg-white" required />
               </div>
-              <div class="relative mb-6">
-                <label for="rusername" class="absolute -top-2 left-5 bg-white px-1 z-10 text-[12px] font-medium text-secondary">Mail or UserName</label>
-                <input type="text" name="rusername" id="rusername" class="w-full border border-gray-200 px-5 py-3.5 outline-none rounded focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-sm text-secondary" required />
+              <div class="relative">
+                <label for="rusername" class="absolute -top-2 left-5 bg-white px-1.5 z-10 text-[12px] font-bold text-secondary uppercase tracking-wide">Mail or UserName</label>
+                <input type="text" name="rusername" id="rusername" class="w-full border border-gray-200 px-5 py-4 outline-none rounded-xl focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-sm text-secondary bg-white" required />
               </div>
-              <div class="relative mb-6">
-                <label for="rpassword" class="absolute -top-2 left-5 bg-white px-1 z-10 text-[12px] font-medium text-secondary">Password</label>
-                <input type="password" name="rpassword" id="rpassword" class="w-full border border-gray-200 px-5 py-3.5 outline-none rounded focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-sm text-secondary" required />
+              <div class="relative">
+                <label for="rpassword" class="absolute -top-2 left-5 bg-white px-1.5 z-10 text-[12px] font-bold text-secondary uppercase tracking-wide">Password</label>
+                <input type="password" name="rpassword" id="rpassword" class="w-full border border-gray-200 px-5 py-4 outline-none rounded-xl focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-sm text-secondary bg-white" required />
               </div>
-              <div class="relative mb-6">
-                <label for="confirmpassword" class="absolute -top-2 left-5 bg-white px-1 z-10 text-[12px] font-medium text-secondary">Confirm Password</label>
-                <input type="password" name="confirmpassword" id="confirmpassword" class="w-full border border-gray-200 px-5 py-3.5 outline-none rounded focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-sm text-secondary" required />
+              <div class="relative">
+                <label for="confirmpassword" class="absolute -top-2 left-5 bg-white px-1.5 z-10 text-[12px] font-bold text-secondary uppercase tracking-wide">Confirm Password</label>
+                <input type="password" name="confirmpassword" id="confirmpassword" class="w-full border border-gray-200 px-5 py-4 outline-none rounded-xl focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-sm text-secondary bg-white" required />
               </div>
-              <div class="mb-4">
-                <button type="submit" class="w-full py-3.5 bg-primary text-white font-bold uppercase tracking-wider text-xs hover:bg-secondary transition-colors rounded">Register</button>
+              <div>
+                <button type="submit" class="w-full h-12 bg-primary hover:bg-secondary text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-colors">Register</button>
               </div>
             </form>
           </div>
           
           <!-- Bottom Links -->
-          <div class="text-center space-y-2 mt-6">
-            <p class="text-sm text-secondary">Already have an account? <a href="login.html" class="text-primary font-semibold hover:underline">Sign In</a></p>
+          <div class="text-center mt-6 pt-6 border-t border-gray-50">
+            <p class="text-xs text-secondary">Already have an account? <a href="login.html" class="text-primary font-bold hover:underline">Sign In</a></p>
           </div>
         </div>
       </div>
